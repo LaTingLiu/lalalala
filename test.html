@@ -16,7 +16,7 @@ d3.csv("./typhoon.csv",
 		var ln = data.length;
 		console.log(data);
 		var maxy = d3.max(data, function(d){ return d.number; });
-		var lines = d3.line().x(function(d,i){return i*(width/ln);}).y(function(d){return height-d.number*(height/maxy)});
+		var lines = d3.line().x(function(d,i){return i*(width/ln);}).y(function(d){return height-d.number*(height/130)});
 		ctrl.append("path").data([data]).attr("d", lines).attr("stroke", "red").attr("fill", "none");
 	}
 
