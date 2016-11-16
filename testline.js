@@ -3,7 +3,7 @@ function testline()
 	var width = 800;
 	var height = 500;
 	var ctrl = d3.select("body").append("svg").attr("width", width).attr("height", height);
-	d3.csv("./typhoon.csv", 
+	d3.csv("http://latingliu.github.io/lalalala/typhoon.csv", 
 		function(data)
 		{
 			var ln = data.length;
